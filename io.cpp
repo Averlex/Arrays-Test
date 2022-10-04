@@ -8,7 +8,7 @@ int print_arr(Data& elem) {
 
 	std::cout << "\nNumber of elements: " << elem.size() << ".\n";
 	if (elem.size() == 0) {
-		std::cout << "The array is empty!\n";
+		std::cout << "\nThe array is empty!\n";
 		return 0;
 	}
 
@@ -27,7 +27,7 @@ int print_Vec(VecData& elem) {
 
 	std::cout << "\nNumber of elements: " << elem.size() << ".\n";
 	if (elem.size() == 0) {
-		std::cout << "The array is empty!\n";
+		std::cout << "\nThe array is empty!\n";
 		return 0;
 	}
 
