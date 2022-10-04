@@ -16,4 +16,4 @@ No divine purpose was pursued. Likewise, a lot of simplifications were admitted.
 5) Initialization: via built-in rand() function.
 
 As a conclusion, I may add that the vector realization was slower on an old laptop of mine by approximately 4 times (6-7 on a small numbers of elements).
-Using modern hardware makes the vector realization slightly faster though it's not significant.
+Using modern hardware makes the vector realization almost equal to a unique_ptr one though it's not significant.
