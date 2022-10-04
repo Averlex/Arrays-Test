@@ -9,7 +9,7 @@ int main()
 {
 	int n{ 0 };
 	static const int count{ 1000 };
-	static const int multiplier{ 1000000 };									// For converting to microseconds
+	static const int multiplier{ 1000 };									// For converting to microseconds
 
 	std::cout << "\n\nEnter the number of elements in the array: ";
 	std::cin >> n;
@@ -39,11 +39,29 @@ int main()
 		res2 += clock3 - clock2;
 	}
 
-	long double rres1 = static_cast<long double>(res1) * multiplier / CLOCKS_PER_SEC / count;
-	long double rres2 = static_cast<long double>(res2) * multiplier / CLOCKS_PER_SEC / count;
+	double rres1 = static_cast<long double>(res1) * multiplier / CLOCKS_PER_SEC / count;
+	double rres2 = static_cast<long double>(res2) * multiplier / CLOCKS_PER_SEC / count;
 
-	std::cout << "Elapsed time, microseconds: " << rres1 << "\n";
-	std::cout << "Elapsed time, microseconds: " << rres2 << "\n";
+	std::cout << "Elapsed time, milliseconds: " << rres1 << "\n";
+	std::cout << "Elapsed time, milliseconds: " << rres2 << "\n";
+
+	char ch = 0;
+	std::cout << "\nDo you want to print examples for each array? (Y/N): ";
+	std::cin>> ch;
+	std::cout << "\n";
+
+	if (ch == 'y' || ch == 'Y')
+	{
+		Data elem1(n);
+		VecData elem2(n);
+		init(elem1);
+		initVec(elem2);
+		print_arr(elem1);
+		print_Vec(elem2);
+		std::cout << "\n";
+	}
+
+	system("pause");
 
     return 0;
 }
