@@ -6,11 +6,11 @@ For a test subject a simple class was written using 2 similar methods of the dat
 
 No divine purpose was pursued. Likewise, a lot of simplifications were admitted.
 
-Input: number of elemetns.
-Output: the average lifecycle time of the object of each class.
+ - Input: number of elemetns.
+ - Output: the average lifecycle time of the object of each class.
 
-The base element type: int;
-Number of elements stored: up to user;
-Measurements' scope: the whole lifecycle of a class object (constuction - initialization - destruction);
-Amount of measurements: 1000 (count const);
-Initialization: via built-in rand() function.
+1) The base element type: int;
+2) Number of elements stored: up to user;
+3) Measurements' scope: the whole lifecycle of a class object (constuction - initialization - destruction);
+4) Amount of measurements: 1000 (count const);
+5) Initialization: via built-in rand() function.
